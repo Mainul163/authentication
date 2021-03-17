@@ -8,7 +8,7 @@ import { useState } from 'react';
 // firebase.initializeApp(firebaseConfig)
 // aita replace kore nicher ta likhsi
 
-if(firebase.apps.length == 0){
+if(firebase.apps.length === 0){
   firebase.initializeApp(firebaseConfig);
   }
   // othoba aita use korbo
