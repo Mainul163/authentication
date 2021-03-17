@@ -119,8 +119,8 @@ const handleSubmit =(event) =>{
       console.log("displayuser",users)
     })
     .catch((error) => {
-      var errorCode = error.code;
-      var errorMessage = error.message;
+      // var errorCode = error.code;
+      // var errorMessage = error.message;
       const userInfo={...user}
       userInfo.error=error.message;
       userInfo.success=false;
@@ -149,7 +149,7 @@ const handleFbSingIn= ()=> {
   .then((result) => {
     /** @type {firebase.auth.OAuthCredential} */
    
-    var credential = result.credential;
+    // var credential = result.credential;
 
     // The signed-in user info.
     var user = result.user;
